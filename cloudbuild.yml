@@ -124,12 +124,12 @@ steps:
   waitFor: ['yarn']
 
 # E2E test
-- name: 'gcr.io/cloud-builders/gcloud'
-  entrypoint: 'bash'
-  id: 'e2e'
-  args: ['./scripts/run-build.sh', 'e2e']
-  waitFor: ['find-affected-packages']
-  env: ['NIGHTLY=$_NIGHTLY']
+# - name: 'gcr.io/cloud-builders/gcloud'
+#   entrypoint: 'bash'
+#   id: 'e2e'
+#   args: ['./scripts/run-build.sh', 'e2e']
+#   waitFor: ['find-affected-packages']
+#   env: ['NIGHTLY=$_NIGHTLY']
 
 # Inference API
 - name: 'gcr.io/cloud-builders/gcloud'
