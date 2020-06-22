@@ -132,12 +132,12 @@ steps:
 #   env: ['NIGHTLY=$_NIGHTLY']
 
 # Inference API
-- name: 'gcr.io/cloud-builders/gcloud'
-  entrypoint: 'bash'
-  id: 'tfjs-inference'
-  args: ['scripts/run-build.sh', 'tfjs-inference']
-  waitFor: ['find-affected-packages']
-  env: ['NIGHTLY=$_NIGHTLY']
+# - name: 'gcr.io/cloud-builders/gcloud'
+#   entrypoint: 'bash'
+#   id: 'tfjs-inference'
+#   args: ['scripts/run-build.sh', 'tfjs-inference']
+#   waitFor: ['find-affected-packages']
+#   env: ['NIGHTLY=$_NIGHTLY']
 
 # General settings.
 timeout: 3600s
