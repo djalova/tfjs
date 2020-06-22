@@ -105,7 +105,7 @@ module.exports = function(config) {
         browser: 'chrome',
         browser_version: 'latest',
         os: 'OS X',
-        os_version: 'High Sierra'
+        os_version: 'Mojave'
       },
       bs_firefox_mac: {
         base: 'BrowserStack',
